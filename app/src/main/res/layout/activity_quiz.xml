@@ -6,4 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".QuizActivity">
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizText"
+        android:textSize="18sp"
+        android:text="TextView"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correctAnswerText"
+        app:layout_constraintTop_toBottomOf="@id/quizText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:id="@+id/answerButton1"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#1982dc"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@id/correctAnswerText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:id="@+id/answerButton2"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#1982dc"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@id/answerButton1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:id="@+id/answerButton3"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#1982dc"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@id/answerButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:id="@+id/nextButton"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#1bce77"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:text="次に進む"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judgeImage"
+        android:src="@drawable/maru_image"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
