@@ -10,10 +10,5 @@ class QuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-        val quizIntent: Intent = Intent(this, QuizActivity::class.java)
-
-        startButton.setOnClickListener {
-            startActivity(quizIntent)
-        }
     }
 }
