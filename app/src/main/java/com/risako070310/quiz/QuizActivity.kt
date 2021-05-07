@@ -36,13 +36,18 @@ class QuizActivity : AppCompatActivity() {
         answerButton2.setOnClickListener {
             checkAnswer(answerButton2.text.toString())
         }
-        answerButton2.setOnClickListener {
-            checkAnswer(answerButton2.text.toString())
+        answerButton3.setOnClickListener {
+            checkAnswer(answerButton3.text.toString())
         }
 
         nextButton.setOnClickListener {
             if(quizCount == quizList.size) {
-                val intent = Intent(this, ResultActivity::class.java)
+                val resultIntent = Intent(this, ResultActivity::class.java)
+                resultIntent.putExtra("quizCount", quizList.size)
+                resultIntent.putExtra("correctCount", correctCount)
+
+                startActivity(resultIntent)
+                finish()
             } else {
                 judgeImage.isVisible = false
 
@@ -53,6 +58,8 @@ class QuizActivity : AppCompatActivity() {
                 correctAnswerText.text = ""
 
                 showQuestion()
+
+                nextButton.isVisible = false
             }
         }
 
